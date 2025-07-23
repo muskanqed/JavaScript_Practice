@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz with Delayed Hint</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #333;
+    }
+    button {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #hint {
+      color: #007BFF;
+      font-style: italic;
+      margin-top: 20px;
+    }
+    #result {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2 id="question">Loading question...</h2>
+  <div id="options"></div>
+  <p id="hint"></p>
+  <p id="result"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
