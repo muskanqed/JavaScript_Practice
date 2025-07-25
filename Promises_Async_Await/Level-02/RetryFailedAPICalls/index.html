@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retry Fetch with Backoff</title>
+    <style>
+      body {
+        background-color: #f0f4f8;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      h2 {
+        color: #2c3e50;
+        margin-bottom: 1rem;
+      }
+
+      #fetchBtn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        background-color: #3498db;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      #fetchBtn:hover {
+        background-color: #2980b9;
+      }
+
+      #output {
+        margin-top: 2rem;
+        background: #ffffff;
+        color: #333;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>🌀 Retry Fetch with Exponential Backoff</h2>
+    <button id="fetchBtn">Fetch Data</button>
+    <pre id="output"></pre>
+
+    <script src="script.js"></script>
+  </body>
+</html>
