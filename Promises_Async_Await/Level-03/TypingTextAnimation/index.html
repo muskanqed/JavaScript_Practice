@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypingText</title>
+    <style>
+      .container {
+        font-family: "Courier New", monospace;
+        font-size: 2rem;
+        margin-top: 100px;
+        text-align: center;
+        color: #333;
+      }
+
+      #typingText::after {
+        content: "|";
+        animation: blink 1s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="typingText"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
